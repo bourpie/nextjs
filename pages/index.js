@@ -1,15 +1,18 @@
 import axios from 'axios';
+import Layout from "../components/Layout";
 
 const Home = ({ posts, error }) => {
   if (error) {
     return <div>An error occured: {error.message}</div>;
   }
   return (
+    <Layout>
     <ul>
       {posts.data.map(post => (
         <li key={post.id}>{post.attributes.title}</li>
       ))}
     </ul>
+    </Layout>
   );
 };
 
