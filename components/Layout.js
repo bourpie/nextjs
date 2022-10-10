@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Header from "./Header";
-import NavBar from "./Navbar";
+import Header from "./header";
+import NavBar from "./navbar";
 
 const Layout = props => (
   <div className="Layout">
