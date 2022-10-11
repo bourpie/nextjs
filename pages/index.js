@@ -3,11 +3,11 @@ import Layout from "../components/layout";
 
 const Home = ({ posts, error }) => {
   if (error) {
-    return <div>An error occured: {error.message}</div>;
+    return <div>Une erreur est survenue : {error.message}</div>;
   }
   return (
     <Layout>
-    <ul>
+      <ul>
       {posts.data.map(post => (
         <li key={post.id}>{post.attributes.title}</li>
       ))}

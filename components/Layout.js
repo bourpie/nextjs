@@ -1,20 +1,20 @@
 import Head from "next/head";
 import Header from "./header";
-import NavBar from "./navbar";
+import Footer from "./footer";
 
 const Layout = props => (
-  <div className="Layout">
-
+  <>
     <Head>
       <title>Boomer blogue</title>
       <meta name="description" content="Put your description here."></meta>
     </Head>
+    
     <Header />
-    <div className="Content">
+    <main className="mb-auto">
       {props.children}
-    </div>
-    <NavBar />
-  </div>
+    </main>
+    <Footer />
+  </>
 );
 
 export default Layout;

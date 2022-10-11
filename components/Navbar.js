@@ -1,7 +1,7 @@
 const NavBar = () => (
-<div className="NavBar">
+<nav className="NavBar">
     NAVBAR
-</div>
+</nav>
 );
 
 export default NavBar;
