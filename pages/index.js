@@ -1,5 +1,5 @@
 import axios from 'axios';
-import Layout from "../components/layout";
+import Layout from "../layouts/layout";
 
 const Home = ({ posts, error }) => {
   if (error) {
