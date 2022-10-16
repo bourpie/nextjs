@@ -15,7 +15,6 @@ const Home = ({ posts }) => {
 export async function getServerSideProps() {
   const data = await fetch(`https://strapi-production-714e.up.railway.app/api/posts/`);
   const posts = await data.json();
-  console.log(posts);
   return { props: { posts } }
 }
 

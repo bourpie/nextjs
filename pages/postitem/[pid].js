@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router'
 import Layout from '../../layouts/Layout'
 import {marked} from 'marked';
 import parse from 'html-react-parser';
@@ -7,7 +6,6 @@ const PostItem = ({post}) => {
 
   return (
     <Layout>
-        
         <article className="container max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
             <h1 className='text-4xl'>{post.data.attributes.title}</h1>
             <div>
