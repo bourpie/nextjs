@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from "next/image";
 import Logo from "../public/me2-art.png"
 
-const Header = () => (
+const Entete = () => (
     <header>
         <div className="container max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0 flex items-center justify-between py-10">
             <Link href="/">
@@ -19,4 +19,4 @@ const Header = () => (
     </header>
 );
   
-export default Header;
+export default Entete;

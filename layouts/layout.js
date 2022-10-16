@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Header from "./header";
-import Footer from "./footer";
+import Entete from "./entete";
+import Pied from "./pied";
 
 const Layout = props => (
   <div className="flex flex-col h-full">
@@ -9,11 +9,11 @@ const Layout = props => (
       <meta name="description" content="Put your description here."></meta>
     </Head>
     
-    <Header />
+    <Entete />
     <main className="mb-auto py-10 border-t">
       {props.children}
     </main>
-    <Footer />
+    <Pied />
   </div>
 );
 
