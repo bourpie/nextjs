@@ -1,6 +1,8 @@
+import Link from 'next/link';
+
 const NavBar = () => (
-<nav className="NavBar">
-    NAVBAR
+<nav aria-label="Navigation primaire">
+    <Link href="/"><a>À propos</a></Link>
 </nav>
 );
 

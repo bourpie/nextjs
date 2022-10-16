@@ -3,7 +3,7 @@ import Header from "./header";
 import Footer from "./footer";
 
 const Layout = props => (
-  <>
+  <div className="flex flex-col h-full">
     <Head>
       <title>Boomer blogue</title>
       <meta name="description" content="Put your description here."></meta>
@@ -14,7 +14,7 @@ const Layout = props => (
       {props.children}
     </main>
     <Footer />
-  </>
+  </div>
 );
 
 export default Layout;

@@ -7,11 +7,13 @@ const Home = ({ posts, error }) => {
   }
   return (
     <Layout>
-      <ul>
-          {posts.data.map(post => (
-          <li key={post.id}>{post.attributes.title}</li>
-          ))}
-      </ul>
+      <section aria-label="Nouvelles" className="container max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+        <ul>
+            {posts.data.map(post => (
+            <li key={post.id}>{post.attributes.title}</li>
+            ))}
+        </ul>
+      </section>
     </Layout>
   );
 };
