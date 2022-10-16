@@ -10,7 +10,7 @@ const Layout = props => (
     </Head>
     
     <Header />
-    <main className="mb-auto">
+    <main className="mb-auto py-10 border-t">
       {props.children}
     </main>
     <Footer />

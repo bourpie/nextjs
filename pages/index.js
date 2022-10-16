@@ -1,31 +1,22 @@
-import axios from 'axios';
 import Layout from "../layouts/layout";
+import Posts from "../components/posts"
 
-const Home = ({ posts, error }) => {
-  if (error) {
-    return <div>Une erreur est survenue : {error.message}</div>;
-  }
+const Home = ({ posts }) => {
+
   return (
     <Layout>
       <section aria-label="Nouvelles" className="container max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
-        <ul>
-            {posts.data.map(post => (
-            <li key={post.id}>{post.attributes.title}</li>
-            ))}
-        </ul>
+      <Posts posts={posts}></Posts>
       </section>
     </Layout>
   );
 };
 
-Home.getInitialProps = async ctx => {
-  try {
-    const res = await axios.get('https://strapi-production-714e.up.railway.app/api/posts');
-    const posts = res.data;
-    return { posts };
-  } catch (error) {
-    return { error };
-  }
-};
+export async function getServerSideProps() {
+  const data = await fetch(`https://strapi-production-714e.up.railway.app/api/posts/`);
+  const posts = await data.json();
+  console.log(posts);
+  return { props: { posts } }
+}
 
 export default Home;
