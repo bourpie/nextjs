@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
-const NavBar = () => (
+const Navbar = () => (
 <nav aria-label="Navigation primaire">
     <Link href="/"><a>À propos</a></Link>
 </nav>
 );
 
-export default NavBar;
+export default Navbar;

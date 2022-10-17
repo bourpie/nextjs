@@ -1,8 +1,8 @@
-import Layout from '../../layouts/Layout'
+import Layout from '../../layouts/layout'
 import {marked} from 'marked';
 import parse from 'html-react-parser';
 
-const PostItem = ({post}) => {
+const Postitem = ({post}) => {
 
   return (
     <Layout>
@@ -23,4 +23,4 @@ export async function getServerSideProps({params}) {
   return { props: { post } }
 }
 
-export default PostItem
+export default Postitem

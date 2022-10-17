@@ -1,4 +1,4 @@
-import NavBar from "./navbar";
+import Navbar from "./navbar";
 import Link from 'next/link';
 import Image from "next/image";
 import Logo from "../public/me2-art.png"
@@ -14,7 +14,7 @@ const Entete = () => (
                     <div className="hidden text-2xl font-semibold sm:block">Bourpie blog</div>
                 </a>
             </Link>
-            <NavBar />
+            <Navbar />
         </div>      
     </header>
 );
