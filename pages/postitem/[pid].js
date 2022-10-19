@@ -6,8 +6,8 @@ const Postitem = ({post}) => {
 
   return (
     <Layout>
-        <article className="container max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
-            <h1 className='text-4xl'>{post.data.attributes.title}</h1>
+        <article className="container max-w-3xl px-4 sm:px-6 xl:max-w-4xl xl:px-0">
+            <h1 className='font-poppins font-bold text-4xl'>{post.data.attributes.title}</h1>
             <div>
             {post.data.attributes.content && (parse(marked.parse(post.data.attributes.content)))}
             </div>
